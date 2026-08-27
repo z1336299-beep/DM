@@ -735,6 +735,7 @@ p { margin: 0; }
 }
 .form-status.show { display: block; }
 .form-status.ok { color: #1c7c3f; }
+.form-status.error { color: var(--accent-500); }
 
 /* ---------- Footer ---------- */
 .site-footer {

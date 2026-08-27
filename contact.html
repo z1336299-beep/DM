@@ -103,7 +103,9 @@
       <div class="contact-form">
         <h3 style="font-size:20px;color:#15335e;margin-bottom:8px;">Send a Message</h3>
         <p style="font-size:14px;color:#4c5661;margin-bottom:24px;">Fill in your requirements and we'll respond within 1 business day.</p>
-        <form id="contact-form">
+        <form id="contact-form" action="https://formspree.io/f/xoeqaljl" method="POST">
+          <input type="hidden" name="_subject" value="New inquiry from Demao Fastener website" />
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
           <div class="form-grid">
             <div class="form-field">
               <label for="name">Name *</label>
@@ -140,10 +142,6 @@
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
           <div id="form-status" class="form-status"></div>
-          <p class="form-note">
-            Note: this is a static website. The form above is a front-end demo only. Before going live, connect it to a
-            form service such as Formspree / Getform, or a simple backend endpoint, to actually receive visitor messages.
-          </p>
         </form>
       </div>
     </div>
