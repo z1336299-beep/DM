@@ -381,6 +381,7 @@ p { margin: 0; }
   gap: 2px;
 }
 .stat-band-item .num .unit { font-size: 18px; color: var(--accent-500); font-weight: 700; }
+.stat-band-item .num.num-sm { font-size: 22px; }
 .stat-band-item .label {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.6);
