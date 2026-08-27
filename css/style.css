@@ -604,6 +604,43 @@ p { margin: 0; }
 .cert-badge svg { width: 32px; height: 32px; margin: 0 auto 10px; color: var(--steel-500); }
 .cert-badge span { display: block; font-size: 13px; font-weight: 600; }
 
+.cert-gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.cert-card {
+  background: var(--white);
+  border: 1px solid var(--steel-200);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cert-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.cert-card-media {
+  display: block;
+  background: var(--steel-100);
+  padding: 20px;
+}
+.cert-card-media img {
+  width: 100%;
+  height: 340px;
+  object-fit: contain;
+  display: block;
+}
+.cert-card-body { padding: 20px 22px 22px; }
+.cert-card-body h3 { font-size: 17px; color: var(--navy-900); margin-bottom: 10px; }
+.cert-meta { list-style: none; padding: 0; margin: 0 0 14px; }
+.cert-meta li { font-size: 13px; color: var(--steel-700); line-height: 1.7; }
+.cert-meta li strong { color: var(--navy-900); font-weight: 700; }
+.cert-view-link {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent-600);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+@media (max-width: 720px) {
+  .cert-gallery { grid-template-columns: 1fr; }
+}
+
 /* ---------- Table (Products spec) ---------- */
 .spec-table {
   width: 100%;
